@@ -1,0 +1,139 @@
+/* Basic styling for the form container */
+.menu-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-form-container:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Form layout */
+  .menu-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Submit button styles */
+  .submit-btn {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .submit-btn:active {
+    background-color: #388e3c;
+    transform: translateY(0); /* Button "press" effect */
+  }
+  
+  /* Popup box styling */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .checkmark {
+    font-size: 50px;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .popup button {
+    padding: 12px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .popup button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px); /* Lift on hover */
+  }
+  
+  .popup button:active {
+    background-color: #c62828;
+    transform: translateY(0); /* Button press effect */
+  }
+  
+  /* Animation for the popup */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
